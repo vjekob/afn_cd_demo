@@ -1,0 +1,31 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "blobIn",
+      "direction": "in",
+      "type": "blob",
+      "path": "bresso/settings.json"
+    },
+    {
+      "name": "queue",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "bresso"
+    }
+  ]
+}

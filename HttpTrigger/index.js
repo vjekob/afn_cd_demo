@@ -3,4 +3,7 @@ module.exports = async function (context, req) {
         actualSettings: context.bindings.blobIn,
         name: req.query.name
     };
+    context.res = {
+        body: "Response OK"
+    }
 };

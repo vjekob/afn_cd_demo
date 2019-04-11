@@ -4,6 +4,9 @@ module.exports = async function (context, req) {
         name: req.query.name
     };
     context.res = {
-        body: "Response OK"
+        body: {
+            status: "Response OK",
+            name: req.query.name
+        }
     }
 };
